@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	float c,d;
+	scanf("%d %d",&a ,&b);
+	scanf("%f %f",&c ,&d);
+	if(((a>=1)&&(a<=10000))&&((b>=1)&&(b<=10000)))
+	{
+		printf("%d %d\n",a+b ,a-b);
+	}
+    
+	if(((c>=1)&&(c<=10000))&&((d>=1)&&(d<=10000)))
+	{
+		printf("%.1f %.1f",c+d,c-d);
+	}
+    
+	return 0;
+}
