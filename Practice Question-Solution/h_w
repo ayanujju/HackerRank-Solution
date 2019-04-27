@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    char t[100];
+    printf("Hello, World!\n");
+    t[100]="Welcome to C programming";
+    gets(t);
+    puts(t);
+    return 0;
+}
