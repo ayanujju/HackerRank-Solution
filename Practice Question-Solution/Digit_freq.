@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    int i,count1=0,count2=0,count3=0,count4=0,count5=0,count6=0,count7=0,count8=0
+        ,count9=0,count10=0;
+    char a[1000];
+    gets(a);
+    
+    for(i=0;a[i]!='\0';i++){
+        if(a[i]=='0'){
+        count1++;
+    }
+        if(a[i]=='1'){
+        count2++;
+    }
+        if(a[i]=='2'){
+        count3++;
+    }
+        if(a[i]=='3'){
+        count4++;
+    }
+        if(a[i]=='4'){
+        count5++;
+    }
+        if(a[i]=='5'){
+        count6++;
+    }
+        if(a[i]=='6'){
+        count7++;
+    }
+        if(a[i]=='7'){
+        count8++;
+    }
+        if(a[i]=='8'){
+        count9++;
+    }
+        if(a[i]=='9'){
+        count10++;
+    }}
+    
+        printf("%d %d %d %d %d ",count1,count2,count3,count4,count5);
+        printf("%d %d %d %d %d",count6,count7,count8,count9,count10);
+    return 0;
+    
+}
