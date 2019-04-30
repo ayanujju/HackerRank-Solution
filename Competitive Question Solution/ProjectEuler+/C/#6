@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(){
+    int t; 
+    scanf("%d",&t);
+    if(t>=1&&t<=10000){
+    while(t--){
+        long long n; 
+        scanf("%lld",&n);
+        if(n>=1&&n<=10000){
+            long long k = ((n*(n+1))/2)*((n*(n+1))/2)-(n*(n+1)*((2*n)+1)/6);
+        printf("%lld\n",k);}
+    }}
+    
+    return 0;
+}
