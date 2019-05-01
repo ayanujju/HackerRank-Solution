@@ -1,0 +1,10 @@
+ int j;
+    double e;
+    char p[100];     
+    scanf("%d",&j);
+    scanf("%lf",&e);
+    scanf(" %[^\n]s",p);
+    printf("%d\n",(i+j));
+    printf("%0.1f\n",(d+e));
+    printf("%s",s);
+    printf("%s",p);
