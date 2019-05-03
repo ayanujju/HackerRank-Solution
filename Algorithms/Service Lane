@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+    int n,q,i;
+    scanf("%d %d",&n,&q);
+    int a[n];
+    for(i=0;i<n;i++){
+        scanf("%d ",&a[i]);
+    }
+    while(q--){
+        int x,y,j,min=0;
+        scanf("%d %d",&x,&y);
+        min=a[x];
+        for(j=x;j<=y;j++){
+            if(min>a[j])
+                min = a[j];
+        }
+        printf("%d\n",min);
+    }
+    
+    return 0;
+}
