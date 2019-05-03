@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+    int n,k,count=0,i,j;
+    scanf("%d %d", &n, &k);
+    if((n>=2 && n<=100)&&(k>=1 && k<=100)){
+    int a[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d ", &a[i]);
+    }
+    for(i=0;i<n;i++){
+        for(j=i+1;j<n;j++){
+            if(((a[i]+a[j])%k)==0)
+                count++;
+               }
+    }
+        printf("%d",count);
+    } 
+    
+    return 0; 
+}
