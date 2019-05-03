@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main()
+{
+    int n,k,t,i,sum=0;
+    scanf("%d %d",&n,&k);
+    int a[n];
+    for(i=0;i<n;i++){
+        scanf("%d ",&a[i]);
+        sum+=a[i];}
+    scanf("%d",&t);
+    sum-=a[k];
+    
+    if((sum/2)==t)
+        printf("Bon Appetit");
+    else
+        printf("%d",t-(sum/2));
+        
+    retuen 0;
+}
