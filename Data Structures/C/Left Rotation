@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int n,d,i;
+    scanf("%d %d",&n, &d);
+    if((n<1&&n>100000)||(d<1&&d>n))
+    {
+        exit(0);
+    }
+    long long a[n],a1[n];
+    for(i=1;i<=n;i++){
+        scanf("%lld ",&a[i]);
+    }
+    for(i=1;i<=n;i++){
+        if(i<=d)
+            a1[n-d+i]=a[i];
+        else
+            a1[i-d]=a[i];
+    }
+    for(i=1;i<=n;i++){
+        printf("%lld ",a1[i]);
+    }
+}
