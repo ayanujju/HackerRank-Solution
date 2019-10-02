@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int i = scan.nextInt();
+        double d = scan.nextDouble();
+        scan.nextLine();
+       /* Because scan.nextLine() read one line of input,while scan.nextInt () reads only one integer. Therefore, in the second line , it 
+          would still be necessary to read the line break and the carriage return (\ n \ r), that is, this additional string must be read
+          in order to store the next line to store it in */
+        String s = scan.nextLine();
+
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
+    }
+}
+
