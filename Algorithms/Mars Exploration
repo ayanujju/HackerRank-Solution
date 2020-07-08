@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int marsExploration(string s) {
+    int result=0;
+    for(int i=0;i<s.length();i++)
+    {
+        if((i%3==0 && s[i]!='S') || (((i-1)%3==0) && s[i]!='O') || (((i-2)%3==0) && s[i]!='S'))
+            result++;
+    }
+    return result;
+}
+
+int main()
+{
+    ofstream fout(getenv("OUTPUT_PATH"));
+
+    string s;
+    getline(cin, s);
+
+    int result = marsExploration(s);
+
+    fout << result << "\n";
+
+    fout.close();
+
+    return 0;
+}
