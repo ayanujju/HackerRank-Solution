@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int viralAdvertising(int n) {
+    int cumulative=0,shared=5;
+    for(int day=1;day<=n;day++)
+    {
+        cumulative+=floor(shared/2);
+        int liked =floor(shared/2);
+        shared = liked*3;
+    }
+    return cumulative;
+}
+
+int main()
+{
+    ofstream fout(getenv("OUTPUT_PATH"));
+
+    int n;
+    cin >> n;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+    int result = viralAdvertising(n);
+
+    fout << result << "\n";
+
+    fout.close();
+
+    return 0;
+}
